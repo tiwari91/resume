@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shankar Tiwari | Software Engineer</title>
+    <meta name="description" content="Software engineer with 10+ years building web applications in Java, React, and AWS. Open source contributor.">
+    <meta property="og:title" content="Shankar Tiwari | Software Engineer">
+    <meta property="og:description" content="Full-stack engineer with 10+ years building high-performance web applications in Java, React, and AWS.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tiwari91.github.io/resume/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Shankar Tiwari | Software Engineer">
+    <meta name="twitter:description" content="Full-stack engineer with 10+ years building high-performance web applications in Java, React, and AWS.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="toolbar no-print">
+    <button class="toolbar-btn" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+        <span id="themeLabel">Dark</span>
+    </button>
+    <button class="toolbar-btn" id="pdfExport" aria-label="Download PDF">
+        <i class="fas fa-download"></i>
+        <span>PDF</span>
+    </button>
+</div>
+
+<div class="main-container">
+    <header>
+        <h1>Shankar Tiwari</h1>
+        <p class="subtitle">Software Engineer</p>
+        <div class="contact-info">
+            <span><i class="fas fa-map-marker-alt"></i> Remote / Pune, Maharashtra, India</span> |
+            <a href="mailto:tiwarishankart@gmail.com"><i class="fas fa-envelope"></i> Email</a> |
+            <a href="https://www.linkedin.com/in/shankatiwari91/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+            <a href="https://github.com/tiwari91/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </header>
+
+    <nav class="section-nav no-print" id="sectionNav">
+        <a href="#summary">Summary</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
+    <section class="section" id="summary">
+        <h2>Summary</h2>
+        <p>
+            Software engineer with 10+ years building and testing web applications in Java, React, and AWS.
+            Work has covered legacy JSP modernization, greenfield microservices, and full-stack features on
+            research compliance products used by 200+ institutions. Contributor to Quarkus (13 PRs merged).
+        </p>
+    </section>
+
+    <section class="section" id="experience">
+        <h2>Experience</h2>
+
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>Software Engineer</h3>
+                    <p class="company">Cayuse | Redlands, CA (Nov 2021 - Dec 2024), Remote / Pune, India (Dec 2024 - Present)</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li><strong>Embedded Analytics (Full Stack):</strong> Shipped <a href="https://www.cayuse.com/award-management/insights/" target="_blank">Cayuse Insights</a>, the analytics product for research administrators. Built a Spring Boot service that issues signed tokens for role-based access to executive and PI dashboards with tenant isolation, and the React frontend that embeds them. Owned the Sigma embedding tech spec and the Analytics-to-Insights rebrand.</li>
+                <li><strong>Proposals S2S (100+ tickets, Full Stack):</strong> Delivered 100+ backend and frontend tickets for the <a href="https://www.cayuse.com/award-management/proposals-s2s/" target="_blank">Proposal S2S application</a>. Backend: REST endpoints for proposal search, import/export, routing, submission history, subaward linking, and person/affiliation management, with safe concurrent-edit handling. Frontend: budget replication/escalation, NIH validations, audit history, proposal deadline calendar, permissions with conflict handling, and continuous save with version tracking. Stood up the frontend unit test framework and fixed accessibility issues (screen readers, 400% zoom).</li>
+                <li><strong>Test Automation (Playwright, UI &amp; API):</strong> Built a Playwright suite covering proposal submission flows across 150+ grants.gov forms. Parallel sharding keeps full-suite runtime under 10 minutes. A Zephyr → Jira → Playwright pipeline scaffolds tests directly from QA-authored cases, keeping automation aligned with manual coverage. Replaced manual Postman regression with a Playwright API suite covering all 53 QA cases across reports, routing, audit history, preferences, and attachment upload. Results publish to Zephyr weekly. The first run found six backend issues, including role-gated endpoints, invalid Swagger enum values, and a multi-minute report timeout. A permission-enforcement matrix tests proposal-attachment endpoints across base, read-only, admin, and unauthenticated roles, auto-refreshes expired bearer tokens via the OAuth implicit flow, and runs on every pull request and post-deploy through Bitbucket Pipelines. Flaky-test triage and visual regression checks round out the suite.</li>
+                <li><strong>Human Ethics (IRB Compliance, Full Stack):</strong> Built features for <a href="https://www.cayuse.com/compliance-management/human-ethics/" target="_blank">Cayuse Human Ethics</a>, an IRB protocol management system used by research institutions. Covered protocol submissions, modifications, renewals, incident reporting, and configurable branching forms for investigators, admins, and committee members.</li>
+                <li><strong>COI Migration (100+ tickets, Full Stack):</strong> Migrated the legacy <a href="https://www.cayuse.com/compliance-management/outside-interests/" target="_blank">Conflict of Interest product</a> from Backbone.js to a modern React + Spring Boot + Flowable stack. Across 100+ tickets: new configurable field types, soft-delete for disclosures, print-to-PDF, autofill for SFI components, role-based dashboards, and a recovery path for stuck workflow instances. Improved UI load time by 3.6s, upgraded Node.js 16 → 18, and fixed multi-tenant bugs for NYU, CUNY, Tulane, and Kettering.</li>
+                <li><strong>Legacy Modernization (Iris):</strong> Full-stack work on the legacy <a href="https://www.cayuse.com/compliance-management/iris/" target="_blank">Iris platform</a>: bug fixes, new features, and environment compatibility. Built a responsive Bootstrap proof-of-concept from the legacy JSP UI for a sales demo to prospective clients.</li>
+                <li><strong>AI-Assisted Development:</strong> Regular use of Claude Code CLI for code generation, refactoring, test authoring, and debugging across Java and React.</li>
+                <li><strong>Technologies:</strong> Java 17, Spring Boot, JAX-RS, React, Redux, Playwright, Docker, AWS, SQL Server, Terraform.</li>
+            </ul>
+        </div>
+
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>Software Engineer</h3>
+                    <p class="company">iMedRIS Data Corporation | Redlands, CA | Jan 2018 - Nov 2021</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li>Built and tested web applications serving 200+ institutions including UCSF, TAMU, NIH, Lundquist, and DoD. Resolved 59+ tickets across IRB study management, COI meeting agendas, submission workflows, application approvals, file uploads, and PDF generation.</li>
+                <li>Added accessibility improvements (form labels, table headers), built CV expiration notifications, and fixed multi-tenant production issues across self-hosted and cloud environments.</li>
+            </ul>
+        </div>
+
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>Software Engineer Intern</h3>
+                    <p class="company">OpsRamp | San Jose, CA | Sep 2017 - Dec 2017</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li>Developed dashboard charts to monitor the health of network devices using D3.js.</li>
+            </ul>
+        </div>
+
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>R&D Data Analytics Intern</h3>
+                    <p class="company">DreamWorks Animation | Greater Los Angeles Area | Sep 2016 - Dec 2016</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li>Worked in data pipeline and internal tools to gather and visualize metrics related to production workloads and workflows.</li>
+                <li><strong>Technologies:</strong> Python, JavaScript, Grafana.</li>
+            </ul>
+        </div>
+
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>Research Assistant</h3>
+                    <p class="company">California State University, Fullerton | California | May 2016 - Sep 2016</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li>Developed prototype of California's drought visualization using physical data sculptures and projection-mapping images.</li>
+                <li>Implemented visualization segments: Exploring California map data, displaying lines as streams, data exploration of reservoirs.</li>
+                <li><strong>Technologies:</strong> D3.js, JSON, Python, jQuery.</li>
+            </ul>
+        </div>
+
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>Software Developer</h3>
+                    <p class="company">Illuminatus Software | Pune, India | Aug 2013 - Aug 2014</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li>Designed and built 4 web projects using D3.js, jQuery, Python, and Bootstrap.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2>Projects & Homelab</h2>
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>AWS Cloud Resume Challenge (Serverless & DevOps)</h3>
+                    <p class="company"><a href="https://aws.plainenglish.io/from-theory-to-production-how-i-built-a-serverless-resume-on-aws-using-terraform-9497d5f49634" target="_blank">Medium</a> | Built and deployed a secure, serverless portfolio website on AWS using IaC.</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li><strong>Frontend:</strong> HTML/CSS/JS resume on S3, served through CloudFront for HTTPS and global caching, with Cloudflare handling DNS and edge caching.</li>
+                <li><strong>Backend:</strong> Python Lambda visitor counter backed by DynamoDB. Fronted by API Gateway (REST) with an API key, 5 req/sec rate limit, 10,000 req/month quota, and CloudWatch access logging. MOCK integration for CORS preflight, AWS_PROXY integration for GET/POST.</li>
+                <li><strong>Infrastructure as Code:</strong> All backend resources (DynamoDB, Lambda, API Gateway, IAM, ACM, VPC) defined in Terraform modules. Remote state in S3 with versioning. Bootstrapped existing resources into state via <code>terraform import</code> so CI runs could take over from the initial manual deploy.</li>
+                <li><strong>CI/CD:</strong> Two GitHub Actions pipelines. Frontend pipeline syncs to S3 and invalidates CloudFront. Backend pipeline runs <code>terraform init -reconfigure</code>, imports pre-existing resources, and applies changes on every push to <code>resume-backend/**</code>.</li>
+                <li><strong>Cost guardrail:</strong> AWS Budget at $2/month triggers an SNS topic that invokes a kill-switch Lambda. The Lambda disables the CloudFront distribution within 1-2 minutes, stopping all charges. Least-privilege IAM scoped to three CloudFront actions.</li>
+                <li><strong>DNS:</strong> Cloudflare for apex and subdomain routing, AWS Certificate Manager for the API Gateway custom domain (<code>api.arlingtonhood21.work</code>).</li>
+                <li><strong>Write-ups:</strong> Two published build logs. <a href="https://aws.plainenglish.io/from-theory-to-production-how-i-built-a-serverless-resume-on-aws-using-terraform-9497d5f49634" target="_blank">Phase 1 on Medium</a>, and a Phase 2 debugging post covering API Gateway CORS, state-file loss via <code>s3 sync --delete</code>, and four recreated API Gateways before the fifth stuck.</li>
+            </ul>
+        </div>
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>India Car Buyer Guide (Interactive Web App)</h3>
+                    <p class="company"><a href="https://charming-bonbon-ad07c5.netlify.app" target="_blank">Live</a> | <a href="https://github.com/tiwari91/india-car-buyer-guide" target="_blank">GitHub</a> | 2026</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li><strong>What it is:</strong> Single-page, dependency-free web app that compares 20+ Indian cars on price, mileage, ground clearance, safety, boot, and 10-year cost-to-own, built to help buyers match a car to their roads and budget.</li>
+                <li><strong>Frontend:</strong> Vanilla HTML/CSS/JS. Client-side sortable and filterable comparison with a card/table view toggle, interactive bar charts, and a custom mobile-first design system, no frameworks or build step.</li>
+                <li><strong>Recommendation engine:</strong> A 5-question quiz that scores every car against the user's budget, road type, body, gearbox, and priorities, returning a ranked shortlist with plain-language trade-offs.</li>
+                <li><strong>Deploy:</strong> Static site on Netlify; source in a private GitHub repo.</li>
+            </ul>
+        </div>
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>Kubernetes Homelab Cluster (pi-cluster)</h3>
+                    <p class="company"><a href="https://aws.plainenglish.io/from-zero-to-gitops-building-a-k3s-homelab-on-a-raspberry-pi-with-flux-sops-5f90ad8e783c" target="_blank">Medium</a> | <a href="https://dev.to/shankar_t/from-zero-to-gitops-building-a-k3s-homelab-on-a-raspberry-pi-with-flux-sops-55b7" target="_blank">Dev.to</a> | Sep 2025 - Oct 2025</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li><strong>GitOps:</strong> FluxCD sync between a Git repository and the cluster. Every manifest change in Git lands on the cluster without manual <code>kubectl apply</code>.</li>
+                <li><strong>Manifests:</strong> Kustomize overlays for Deployments, Services, ConfigMaps, PVCs, and Secrets.</li>
+                <li><strong>Apps:</strong> Audiobookshelf and Renovate, running as non-root containers.</li>
+                <li><strong>Security &amp; networking:</strong> Secrets encrypted with SOPS + AGE. Services exposed publicly through Cloudflare Tunnel (e.g. audiobooks.arlingtonhood21.work), no port forwards.</li>
+                <li><strong>Storage:</strong> Persistent volumes for stateful apps.</li>
+            </ul>
+        </div>
+        <div class="item collapsible">
+            <div class="item-header">
+                <div>
+                    <h3>Open Source Contributions</h3>
+                    <p class="company">2026</p>
+                </div>
+                <i class="fas fa-chevron-down collapse-icon"></i>
+            </div>
+            <ul class="item-content">
+                <li><strong>Quarkus:</strong> 13 PRs merged covering bug fixes, documentation, and dev tooling. <a href="https://github.com/quarkusio/quarkus/pulls?q=is:pr+author:tiwari91+is:merged" target="_blank">[Merged PRs]</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="item">
+            <h3>California State University-Fullerton</h3>
+            <p>Master's Degree, Computer Science (2015-2017)</p>
+        </div>
+        <div class="item">
+            <h3>Pune University</h3>
+            <p>Bachelor's Degree, Computer Science (2008-2012)</p>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <span>AWS</span>
+            <span>Terraform</span>
+            <span>Java (Spring Boot, JAX-RS)</span>
+            <span>Python</span>
+            <span>React & Redux</span>
+            <span>Apache Kafka</span>
+            <span>PostgreSQL</span>
+            <span>Playwright</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>CI/CD (GitHub Actions)</span>
+            <span>SQL Server</span>
+            <span>Micrometer</span>
+            <span>GitOps</span>
+            <span>Claude Code / AI-Assisted Dev</span>
+        </div>
+    </section>
+
+    <section class="section" id="publications">
+        <h2>Publications</h2>
+        <p>California Drought Impact: Multimodal Data Representation to Predict the Water Cycle (Dec 2024)</p>
+    </section>
+
+    <footer>
+        <p class="last-updated">Last updated: <span id="lastUpdated">May 7, 2026</span></p>
+    </footer>
+</div>
+
+<button class="back-to-top no-print" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<div class="cmd-palette-overlay no-print" id="cmdOverlay">
+    <div class="cmd-palette" id="cmdPalette">
+        <div class="cmd-input-wrap">
+            <i class="fas fa-search cmd-search-icon"></i>
+            <input type="text" class="cmd-input" id="cmdInput" placeholder="Jump to section..." autocomplete="off">
+            <kbd class="cmd-kbd">esc</kbd>
+        </div>
+        <div class="cmd-results" id="cmdResults"></div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
