@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shankar Tiwari | Software Engineer</title>
-    <meta name="description" content="Software engineer with 10+ years building web applications in Java, React, and AWS. Open source contributor.">
+    <meta name="description" content="Software engineer with 10+ years building web applications in Java, React, and AWS. Browser apps, games and 3D projects.">
     <meta property="og:title" content="Shankar Tiwari | Software Engineer">
     <meta property="og:description" content="Full-stack engineer with 10+ years building high-performance web applications in Java, React, and AWS.">
     <meta property="og:type" content="website">
@@ -12,267 +12,359 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Shankar Tiwari | Software Engineer">
     <meta name="twitter:description" content="Full-stack engineer with 10+ years building high-performance web applications in Java, React, and AWS.">
+    <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#131416" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script>try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-<div class="toolbar no-print">
-    <button class="toolbar-btn" id="themeToggle" aria-label="Toggle theme">
-        <i class="fas fa-moon" id="themeIcon"></i>
-        <span id="themeLabel">Dark</span>
-    </button>
-    <button class="toolbar-btn" id="pdfExport" aria-label="Download PDF">
-        <i class="fas fa-download"></i>
-        <span>PDF</span>
-    </button>
-</div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div class="main-container">
-    <header>
-        <h1>Shankar Tiwari</h1>
-        <p class="subtitle">Software Engineer</p>
-        <div class="contact-info">
-            <span><i class="fas fa-map-marker-alt"></i> Remote / Pune, Maharashtra, India</span> |
-            <a href="mailto:tiwarishankart@gmail.com"><i class="fas fa-envelope"></i> Email</a> |
-            <a href="https://www.linkedin.com/in/shankatiwari91/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a> |
-            <a href="https://github.com/tiwari91/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 5h18v14H3zM3 6l9 7 9-7"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8zM14 3v5h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5M16 7l5 5-5 5"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+</svg>
+
+<div class="wrap">
+    <div class="topbar">
+        <a class="brand" href="./">Shankar Tiwari</a>
+        <div class="topbar-actions">
+            <a class="icon-btn" href="cv.html" aria-label="Full resume"><svg aria-hidden="true"><use href="#i-doc"/></svg><span class="label">Full resume</span></a>
+            <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+                <svg class="icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+                <svg class="icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+            </button>
         </div>
-    </header>
-
-    <nav class="section-nav no-print" id="sectionNav">
-        <a href="#summary">Summary</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-    </nav>
-
-    <section class="section" id="summary">
-        <h2>Summary</h2>
-        <p>
-            Software engineer with 10+ years building and testing web applications in Java, React, and AWS.
-            Work has covered legacy JSP modernization, greenfield microservices, and full-stack features on
-            research compliance products used by 200+ institutions. Contributor to Quarkus (13 PRs merged).
-        </p>
-    </section>
-
-    <section class="section" id="experience">
-        <h2>Experience</h2>
-
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>Software Engineer</h3>
-                    <p class="company">Cayuse | Redlands, CA (Nov 2021 - Dec 2024), Remote / Pune, India (Dec 2024 - Present)</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li><strong>Embedded Analytics (Full Stack):</strong> Shipped <a href="https://www.cayuse.com/award-management/insights/" target="_blank">Cayuse Insights</a>, the analytics product for research administrators. Built a Spring Boot service that issues signed tokens for role-based access to executive and PI dashboards with tenant isolation, and the React frontend that embeds them. Owned the Sigma embedding tech spec and the Analytics-to-Insights rebrand.</li>
-                <li><strong>Proposals S2S (100+ tickets, Full Stack):</strong> Delivered 100+ backend and frontend tickets for the <a href="https://www.cayuse.com/award-management/proposals-s2s/" target="_blank">Proposal S2S application</a>. Backend: REST endpoints for proposal search, import/export, routing, submission history, subaward linking, and person/affiliation management, with safe concurrent-edit handling. Frontend: budget replication/escalation, NIH validations, audit history, proposal deadline calendar, permissions with conflict handling, and continuous save with version tracking. Stood up the frontend unit test framework and fixed accessibility issues (screen readers, 400% zoom).</li>
-                <li><strong>Test Automation (Playwright, UI &amp; API):</strong> Built a Playwright suite covering proposal submission flows across 150+ grants.gov forms. Parallel sharding keeps full-suite runtime under 10 minutes. A Zephyr → Jira → Playwright pipeline scaffolds tests directly from QA-authored cases, keeping automation aligned with manual coverage. Replaced manual Postman regression with a Playwright API suite covering all 53 QA cases across reports, routing, audit history, preferences, and attachment upload. Results publish to Zephyr weekly. The first run found six backend issues, including role-gated endpoints, invalid Swagger enum values, and a multi-minute report timeout. A permission-enforcement matrix tests proposal-attachment endpoints across base, read-only, admin, and unauthenticated roles, auto-refreshes expired bearer tokens via the OAuth implicit flow, and runs on every pull request and post-deploy through Bitbucket Pipelines. Flaky-test triage and visual regression checks round out the suite.</li>
-                <li><strong>Human Ethics (IRB Compliance, Full Stack):</strong> Built features for <a href="https://www.cayuse.com/compliance-management/human-ethics/" target="_blank">Cayuse Human Ethics</a>, an IRB protocol management system used by research institutions. Covered protocol submissions, modifications, renewals, incident reporting, and configurable branching forms for investigators, admins, and committee members.</li>
-                <li><strong>COI Migration (100+ tickets, Full Stack):</strong> Migrated the legacy <a href="https://www.cayuse.com/compliance-management/outside-interests/" target="_blank">Conflict of Interest product</a> from Backbone.js to a modern React + Spring Boot + Flowable stack. Across 100+ tickets: new configurable field types, soft-delete for disclosures, print-to-PDF, autofill for SFI components, role-based dashboards, and a recovery path for stuck workflow instances. Improved UI load time by 3.6s, upgraded Node.js 16 → 18, and fixed multi-tenant bugs for NYU, CUNY, Tulane, and Kettering.</li>
-                <li><strong>Legacy Modernization (Iris):</strong> Full-stack work on the legacy <a href="https://www.cayuse.com/compliance-management/iris/" target="_blank">Iris platform</a>: bug fixes, new features, and environment compatibility. Built a responsive Bootstrap proof-of-concept from the legacy JSP UI for a sales demo to prospective clients.</li>
-                <li><strong>AI-Assisted Development:</strong> Regular use of Claude Code CLI for code generation, refactoring, test authoring, and debugging across Java and React.</li>
-                <li><strong>Technologies:</strong> Java 17, Spring Boot, JAX-RS, React, Redux, Playwright, Docker, AWS, SQL Server, Terraform.</li>
-            </ul>
-        </div>
-
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>Software Engineer</h3>
-                    <p class="company">iMedRIS Data Corporation | Redlands, CA | Jan 2018 - Nov 2021</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li>Built and tested web applications serving 200+ institutions including UCSF, TAMU, NIH, Lundquist, and DoD. Resolved 59+ tickets across IRB study management, COI meeting agendas, submission workflows, application approvals, file uploads, and PDF generation.</li>
-                <li>Added accessibility improvements (form labels, table headers), built CV expiration notifications, and fixed multi-tenant production issues across self-hosted and cloud environments.</li>
-            </ul>
-        </div>
-
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>Software Engineer Intern</h3>
-                    <p class="company">OpsRamp | San Jose, CA | Sep 2017 - Dec 2017</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li>Developed dashboard charts to monitor the health of network devices using D3.js.</li>
-            </ul>
-        </div>
-
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>R&D Data Analytics Intern</h3>
-                    <p class="company">DreamWorks Animation | Greater Los Angeles Area | Sep 2016 - Dec 2016</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li>Worked in data pipeline and internal tools to gather and visualize metrics related to production workloads and workflows.</li>
-                <li><strong>Technologies:</strong> Python, JavaScript, Grafana.</li>
-            </ul>
-        </div>
-
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>Research Assistant</h3>
-                    <p class="company">California State University, Fullerton | California | May 2016 - Sep 2016</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li>Developed prototype of California's drought visualization using physical data sculptures and projection-mapping images.</li>
-                <li>Implemented visualization segments: Exploring California map data, displaying lines as streams, data exploration of reservoirs.</li>
-                <li><strong>Technologies:</strong> D3.js, JSON, Python, jQuery.</li>
-            </ul>
-        </div>
-
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>Software Developer</h3>
-                    <p class="company">Illuminatus Software | Pune, India | Aug 2013 - Aug 2014</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li>Designed and built 4 web projects using D3.js, jQuery, Python, and Bootstrap.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section" id="projects">
-        <h2>Projects & Homelab</h2>
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>AWS Cloud Resume Challenge (Serverless & DevOps)</h3>
-                    <p class="company"><a href="https://aws.plainenglish.io/from-theory-to-production-how-i-built-a-serverless-resume-on-aws-using-terraform-9497d5f49634" target="_blank">Medium</a> | Built and deployed a secure, serverless portfolio website on AWS using IaC.</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li><strong>Frontend:</strong> HTML/CSS/JS resume on S3, served through CloudFront for HTTPS and global caching, with Cloudflare handling DNS and edge caching.</li>
-                <li><strong>Backend:</strong> Python Lambda visitor counter backed by DynamoDB. Fronted by API Gateway (REST) with an API key, 5 req/sec rate limit, 10,000 req/month quota, and CloudWatch access logging. MOCK integration for CORS preflight, AWS_PROXY integration for GET/POST.</li>
-                <li><strong>Infrastructure as Code:</strong> All backend resources (DynamoDB, Lambda, API Gateway, IAM, ACM, VPC) defined in Terraform modules. Remote state in S3 with versioning. Bootstrapped existing resources into state via <code>terraform import</code> so CI runs could take over from the initial manual deploy.</li>
-                <li><strong>CI/CD:</strong> Two GitHub Actions pipelines. Frontend pipeline syncs to S3 and invalidates CloudFront. Backend pipeline runs <code>terraform init -reconfigure</code>, imports pre-existing resources, and applies changes on every push to <code>resume-backend/**</code>.</li>
-                <li><strong>Cost guardrail:</strong> AWS Budget at $2/month triggers an SNS topic that invokes a kill-switch Lambda. The Lambda disables the CloudFront distribution within 1-2 minutes, stopping all charges. Least-privilege IAM scoped to three CloudFront actions.</li>
-                <li><strong>DNS:</strong> Cloudflare for apex and subdomain routing, AWS Certificate Manager for the API Gateway custom domain (<code>api.arlingtonhood21.work</code>).</li>
-                <li><strong>Write-ups:</strong> Two published build logs. <a href="https://aws.plainenglish.io/from-theory-to-production-how-i-built-a-serverless-resume-on-aws-using-terraform-9497d5f49634" target="_blank">Phase 1 on Medium</a>, and a Phase 2 debugging post covering API Gateway CORS, state-file loss via <code>s3 sync --delete</code>, and four recreated API Gateways before the fifth stuck.</li>
-            </ul>
-        </div>
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>India Car Buyer Guide (Interactive Web App)</h3>
-                    <p class="company"><a href="https://charming-bonbon-ad07c5.netlify.app" target="_blank">Live</a> | <a href="https://github.com/tiwari91/india-car-buyer-guide" target="_blank">GitHub</a> | 2026</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li><strong>What it is:</strong> Single-page, dependency-free web app that compares 20+ Indian cars on price, mileage, ground clearance, safety, boot, and 10-year cost-to-own, built to help buyers match a car to their roads and budget.</li>
-                <li><strong>Frontend:</strong> Vanilla HTML/CSS/JS. Client-side sortable and filterable comparison with a card/table view toggle, interactive bar charts, and a custom mobile-first design system, no frameworks or build step.</li>
-                <li><strong>Recommendation engine:</strong> A 5-question quiz that scores every car against the user's budget, road type, body, gearbox, and priorities, returning a ranked shortlist with plain-language trade-offs.</li>
-                <li><strong>Deploy:</strong> Static site on Netlify; source in a private GitHub repo.</li>
-            </ul>
-        </div>
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>Kubernetes Homelab Cluster (pi-cluster)</h3>
-                    <p class="company"><a href="https://aws.plainenglish.io/from-zero-to-gitops-building-a-k3s-homelab-on-a-raspberry-pi-with-flux-sops-5f90ad8e783c" target="_blank">Medium</a> | <a href="https://dev.to/shankar_t/from-zero-to-gitops-building-a-k3s-homelab-on-a-raspberry-pi-with-flux-sops-55b7" target="_blank">Dev.to</a> | Sep 2025 - Oct 2025</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li><strong>GitOps:</strong> FluxCD sync between a Git repository and the cluster. Every manifest change in Git lands on the cluster without manual <code>kubectl apply</code>.</li>
-                <li><strong>Manifests:</strong> Kustomize overlays for Deployments, Services, ConfigMaps, PVCs, and Secrets.</li>
-                <li><strong>Apps:</strong> Audiobookshelf and Renovate, running as non-root containers.</li>
-                <li><strong>Security &amp; networking:</strong> Secrets encrypted with SOPS + AGE. Services exposed publicly through Cloudflare Tunnel (e.g. audiobooks.arlingtonhood21.work), no port forwards.</li>
-                <li><strong>Storage:</strong> Persistent volumes for stateful apps.</li>
-            </ul>
-        </div>
-        <div class="item collapsible">
-            <div class="item-header">
-                <div>
-                    <h3>Open Source Contributions</h3>
-                    <p class="company">2026</p>
-                </div>
-                <i class="fas fa-chevron-down collapse-icon"></i>
-            </div>
-            <ul class="item-content">
-                <li><strong>Quarkus:</strong> 13 PRs merged covering bug fixes, documentation, and dev tooling. <a href="https://github.com/quarkusio/quarkus/pulls?q=is:pr+author:tiwari91+is:merged" target="_blank">[Merged PRs]</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section" id="education">
-        <h2>Education</h2>
-        <div class="item">
-            <h3>California State University-Fullerton</h3>
-            <p>Master's Degree, Computer Science (2015-2017)</p>
-        </div>
-        <div class="item">
-            <h3>Pune University</h3>
-            <p>Bachelor's Degree, Computer Science (2008-2012)</p>
-        </div>
-    </section>
-
-    <section class="section" id="skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <span>AWS</span>
-            <span>Terraform</span>
-            <span>Java (Spring Boot, JAX-RS)</span>
-            <span>Python</span>
-            <span>React & Redux</span>
-            <span>Apache Kafka</span>
-            <span>PostgreSQL</span>
-            <span>Playwright</span>
-            <span>Docker</span>
-            <span>Kubernetes</span>
-            <span>CI/CD (GitHub Actions)</span>
-            <span>SQL Server</span>
-            <span>Micrometer</span>
-            <span>GitOps</span>
-            <span>Claude Code / AI-Assisted Dev</span>
-        </div>
-    </section>
-
-    <section class="section" id="publications">
-        <h2>Publications</h2>
-        <p>California Drought Impact: Multimodal Data Representation to Predict the Water Cycle (Dec 2024)</p>
-    </section>
-
-    <footer>
-        <p class="last-updated">Last updated: <span id="lastUpdated">May 7, 2026</span></p>
-    </footer>
-</div>
-
-<button class="back-to-top no-print" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-</button>
-
-<div class="cmd-palette-overlay no-print" id="cmdOverlay">
-    <div class="cmd-palette" id="cmdPalette">
-        <div class="cmd-input-wrap">
-            <i class="fas fa-search cmd-search-icon"></i>
-            <input type="text" class="cmd-input" id="cmdInput" placeholder="Jump to section..." autocomplete="off">
-            <kbd class="cmd-kbd">esc</kbd>
-        </div>
-        <div class="cmd-results" id="cmdResults"></div>
     </div>
 </div>
 
+<main id="main">
+    <div class="wrap">
+        <header class="hero">
+            <h1>Shankar Tiwari</h1>
+            <p class="role">Software Engineer at Cayuse &middot; Java &amp; React &middot; research and grants software</p>
+            <p class="intro">
+                I've spent 10+ years building and testing web applications in Java, React, and AWS, most recently
+                research administration products used by 200+ institutions. I contribute to Quarkus (13 PRs merged).
+                Outside work I build small browser apps, games and 3D scenes; here they are.
+            </p>
+            <ul class="links">
+                <li><a class="pill primary" href="cv.html"><svg aria-hidden="true"><use href="#i-doc"/></svg>Full resume</a></li>
+                <li><a class="pill" href="https://github.com/tiwari91/" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a></li>
+                <li><a class="pill" href="https://www.linkedin.com/in/shankatiwari91/" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+                <li><a class="pill" href="mailto:tiwarishankart@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a></li>
+            </ul>
+        </header>
+
+        <section id="apps-section" aria-labelledby="apps-title">
+            <div class="section-head">
+                <div>
+                    <h2 id="apps-title">Apps</h2>
+                    <p class="section-note">Things I've built that run in the browser. All open source.</p>
+                </div>
+                <div class="chips" role="group" aria-label="Filter apps" hidden>
+                    <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="chip" type="button" data-filter="games" aria-pressed="false">Games</button>
+                    <button class="chip" type="button" data-filter="3d" aria-pressed="false">3D</button>
+                    <button class="chip" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+                    <button class="chip" type="button" data-filter="spiritual" aria-pressed="false">Spiritual</button>
+                </div>
+            </div>
+            <p id="filterStatus" class="visually-hidden" role="status" aria-live="polite"></p>
+
+            <ul class="grid" id="apps">
+                <li class="card" data-tags="games 3d">
+                    <img class="shot" src="assets/shots/floodlit-football.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Floodlit Football: a rainy stadium seen from above, with the Matchday 1 briefing panel and a Kick off button">
+                    <div class="card-body">
+                        <h3>Floodlit Football</h3>
+                        <p>A browser football game with a league, transfers, fouls, cards, subs and a season simulator.</p>
+                        <div class="tags"><span class="tag">Game</span><span class="tag">3D</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/floodlit-football/" aria-label="Live: Floodlit Football"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/floodlit-football" aria-label="Code: Floodlit Football"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="3d spiritual">
+                    <img class="shot" src="assets/shots/spiritual-traveller.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Spiritual Traveller: a 3D relief map of India with the Himalaya, a route line and a list of five shrines">
+                    <div class="card-body">
+                        <h3>Spiritual Traveller</h3>
+                        <p>A 3D pilgrimage across India in three.js, with darshan at each shrine, plus a Kailash Mansarovar yatra.</p>
+                        <div class="tags"><span class="tag">3D</span><span class="tag">Spiritual</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/spiritual-traveller/" aria-label="Live: Spiritual Traveller"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://tiwari91.github.io/spiritual-traveller/kailash.html" aria-label="Live: Kailash Mansarovar yatra"><svg aria-hidden="true"><use href="#i-ext"/></svg>Kailash</a>
+                            <a class="btn" href="https://github.com/tiwari91/spiritual-traveller" aria-label="Code: Spiritual Traveller"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="3d tools">
+                    <img class="shot" src="assets/shots/interactiveViz.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="California Drought Impact: a 3D terrain map of California with reservoir levels and a storage timeline from 2012 to 2026">
+                    <div class="card-body">
+                        <h3>California Drought Impact</h3>
+                        <p>Interactive 2D and 3D map of California reservoir storage and river links through the recent droughts.</p>
+                        <div class="tags"><span class="tag">3D</span><span class="tag">Data viz</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/interactiveViz/" aria-label="Live: California Drought Impact"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/interactiveViz" aria-label="Code: California Drought Impact"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="games 3d">
+                    <img class="shot" src="assets/shots/socal-ride.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Citrus to Surf: a motorcyclist riding down a palm-lined street in Redlands, with a speedometer and route minimap">
+                    <div class="card-body">
+                        <h3>Citrus to Surf</h3>
+                        <p>A scenic 3D motorcycle ride from Redlands to Laguna Beach on real OpenStreetMap roads.</p>
+                        <div class="tags"><span class="tag">Game</span><span class="tag">3D</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/socal-ride/" aria-label="Live: Citrus to Surf"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/socal-ride" aria-label="Code: Citrus to Surf"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="games 3d">
+                    <img class="shot" src="assets/shots/ember-hop.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Ember Hop: pixel-style title screen over a green 3D level with pipes, hills and the start menu">
+                    <div class="card-body">
+                        <h3>Ember Hop</h3>
+                        <p>A 2.5D side-scrolling platformer in three.js, built over a deterministic simulation.</p>
+                        <div class="tags"><span class="tag">Game</span><span class="tag">3D</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/ember-hop/" aria-label="Live: Ember Hop"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/ember-hop" aria-label="Code: Ember Hop"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="3d tools">
+                    <img class="shot" src="assets/shots/bed-designer.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Palang Bed Designer: a 3D wooden storage bed beside a panel of size and storage options with a cost estimate">
+                    <div class="card-body">
+                        <h3>Palang Bed Designer</h3>
+                        <p>Design a plywood bed in 3D and get the cutting list, sheet count, cost and a carpenter spec sheet.</p>
+                        <div class="tags"><span class="tag">3D</span><span class="tag">Tool</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/bed-designer/" aria-label="Live: Palang Bed Designer"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/bed-designer" aria-label="Code: Palang Bed Designer"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="tools">
+                    <img class="shot" src="assets/shots/india-car-buyer-guide.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="India Car Buyer Guide: a green hero reading 'Buying a car in India? Start with your roads, not the showroom' above a car finder quiz">
+                    <div class="card-body">
+                        <h3>India Car Buyer Guide</h3>
+                        <p>Compare 20+ Indian cars on price, mileage, clearance, safety and 10-year cost, with a 5-question picker.</p>
+                        <div class="tags"><span class="tag">Tool</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/india-car-buyer-guide/" aria-label="Live: India Car Buyer Guide"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/india-car-buyer-guide" aria-label="Code: India Car Buyer Guide"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="tools">
+                    <img class="shot" src="assets/shots/pune-trip-planner.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Pune Trip Planner: a From and To form with a Calculate button and quick picks like Goa, Tirupati and Hampi">
+                    <div class="card-body">
+                        <h3>Pune Trip Planner</h3>
+                        <p>Road-trip planner for India: route, drive time, night stops and full cost against train and flight.</p>
+                        <div class="tags"><span class="tag">Tool</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/pune-trip-planner/" aria-label="Live: Pune Trip Planner"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/pune-trip-planner" aria-label="Code: Pune Trip Planner"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="tools">
+                    <img class="shot" src="assets/shots/goa-new-year-trip.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Goa New Year Road Trip: a day-by-day plan from Pune via Kolhapur and Amboli, with distances and costs per day">
+                    <div class="card-body">
+                        <h3>Goa New Year Road Trip</h3>
+                        <p>A one-page, day-by-day road-trip planner from Pune to the Goa border, with a live budget.</p>
+                        <div class="tags"><span class="tag">Tool</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/goa-new-year-trip/" aria-label="Live: Goa New Year Road Trip"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/goa-new-year-trip" aria-label="Code: Goa New Year Road Trip"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="spiritual tools">
+                    <img class="shot" src="assets/shots/utsav-sadhana.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Utsav Sadhana: the next observance card with a countdown, and a daily mantra card with a mala counter">
+                    <div class="card-body">
+                        <h3>Utsav Sadhana</h3>
+                        <p>Festival-by-festival sadhana: a daily checklist, sourced texts, deity mantras and a mala counter.</p>
+                        <div class="tags"><span class="tag">Spiritual</span><span class="tag">Tool</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/utsav-sadhana/" aria-label="Live: Utsav Sadhana"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/utsav-sadhana" aria-label="Code: Utsav Sadhana"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="card" data-tags="spiritual">
+                    <img class="shot" src="assets/shots/stotra-reader.webp" width="800" height="500" loading="lazy" decoding="async"
+                         alt="Stotra Reader: the Vishnu Sahasranama title in Devanagari with a table of sections and a Recite button">
+                    <div class="card-body">
+                        <h3>Stotra Reader</h3>
+                        <p>Vishnu Sahasranama and Hanuman Chalisa with transliteration, a recite mode and a mala counter.</p>
+                        <div class="tags"><span class="tag">Spiritual</span></div>
+                        <div class="actions">
+                            <a class="btn live" href="https://tiwari91.github.io/stotra-reader/" aria-label="Live: Stotra Reader"><svg aria-hidden="true"><use href="#i-ext"/></svg>Live</a>
+                            <a class="btn" href="https://github.com/tiwari91/stotra-reader" aria-label="Code: Stotra Reader"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <p class="empty" id="appsEmpty" hidden>No apps in this category.</p>
+        </section>
+
+        <section aria-labelledby="infra-title">
+            <div class="section-head">
+                <div>
+                    <h2 id="infra-title">Infrastructure</h2>
+                    <p class="section-note">Homelab and backend work. Code only.</p>
+                </div>
+            </div>
+            <ul class="infra">
+                <li>
+                    <h3>pi-cluster</h3>
+                    <p>K3s homelab on a Raspberry Pi with FluxCD GitOps, Kustomize and SOPS-encrypted secrets.</p>
+                    <a class="btn" href="https://github.com/tiwari91/pi-cluster" aria-label="Code: pi-cluster"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                </li>
+                <li>
+                    <h3>event-ingestion-pipeline</h3>
+                    <p>High-throughput event ingestion with Kafka, Spring Boot 3.4, Java 21 and PostgreSQL.</p>
+                    <a class="btn" href="https://github.com/tiwari91/event-ingestion-pipeline" aria-label="Code: event-ingestion-pipeline"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                </li>
+                <li>
+                    <h3>pipeline-gitops</h3>
+                    <p>GitOps repo that runs the Kafka event ingestion pipeline on K3s.</p>
+                    <a class="btn" href="https://github.com/tiwari91/pipeline-gitops" aria-label="Code: pipeline-gitops"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                </li>
+                <li>
+                    <h3>KubernetesSubmissions</h3>
+                    <p>Exercises for the DevOps with Kubernetes MOOC.</p>
+                    <a class="btn" href="https://github.com/tiwari91/KubernetesSubmissions" aria-label="Code: KubernetesSubmissions"><svg aria-hidden="true"><use href="#i-code"/></svg>Code</a>
+                </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="exp-title">
+            <div class="section-head"><h2 id="exp-title">Experience</h2></div>
+            <ul class="roles">
+                <li>
+                    <div class="when">Nov 2021 – Present</div>
+                    <div>
+                        <h3>Software Engineer</h3>
+                        <p class="org">Cayuse · Redlands, CA, then remote from Pune</p>
+                        <p class="desc">Full-stack work on research administration products. Shipped Cayuse Insights embedded analytics,
+                            delivered 100+ tickets on Proposals S2S, and migrated the Conflict of Interest product from Backbone.js to
+                            React + Spring Boot + Flowable. Built a Playwright suite covering proposal submission across 150+ grants.gov forms.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Jan 2018 – Nov 2021</div>
+                    <div>
+                        <h3>Software Engineer</h3>
+                        <p class="org">iMedRIS Data Corporation · Redlands, CA</p>
+                        <p class="desc">Built and tested web applications serving 200+ institutions, across IRB study management, COI meeting
+                            agendas, submission workflows, file uploads and PDF generation.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Sep 2017 – Dec 2017</div>
+                    <div>
+                        <h3>Software Engineer Intern</h3>
+                        <p class="org">OpsRamp · San Jose, CA</p>
+                        <p class="desc">Dashboard charts in D3.js to monitor the health of network devices.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Sep 2016 – Dec 2016</div>
+                    <div>
+                        <h3>R&amp;D Data Analytics Intern</h3>
+                        <p class="org">DreamWorks Animation · Greater Los Angeles Area</p>
+                        <p class="desc">Data pipeline and internal tools to gather and visualize production workload metrics.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">May 2016 – Sep 2016</div>
+                    <div>
+                        <h3>Research Assistant</h3>
+                        <p class="org">California State University, Fullerton</p>
+                        <p class="desc">Prototype of a California drought visualization using physical data sculptures and projection mapping.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="when">Aug 2013 – Aug 2014</div>
+                    <div>
+                        <h3>Software Developer</h3>
+                        <p class="org">Illuminatus Software · Pune, India</p>
+                        <p class="desc">Designed and built 4 web projects using D3.js, jQuery, Python, and Bootstrap.</p>
+                    </div>
+                </li>
+            </ul>
+            <p class="more"><a href="cv.html">Read the full resume &rarr;</a></p>
+        </section>
+
+        <section aria-labelledby="skills-title">
+            <div class="section-head"><h2 id="skills-title">Skills</h2></div>
+            <ul class="skills">
+                <li>Java (Spring Boot, JAX-RS)</li>
+                <li>React &amp; Redux</li>
+                <li>AWS</li>
+                <li>Terraform</li>
+                <li>Python</li>
+                <li>Playwright</li>
+                <li>Apache Kafka</li>
+                <li>PostgreSQL</li>
+                <li>SQL Server</li>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>GitOps</li>
+                <li>CI/CD (GitHub Actions)</li>
+                <li>Micrometer</li>
+                <li>Claude Code / AI-Assisted Dev</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="pubs-title">
+            <div class="section-head"><h2 id="pubs-title">Publications</h2></div>
+            <ul class="pubs">
+                <li>California Drought Impact: Multimodal Data Representation to Predict the Water Cycle (Dec 2024)</li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="wrap">
+        <span>&copy; 2026 Shankar Tiwari</span>
+        <span><a href="cv.html">Full resume</a> · <a href="https://github.com/tiwari91/resume" rel="noopener">Site source</a></span>
+    </div>
+</footer>
+
+<script src="theme.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
