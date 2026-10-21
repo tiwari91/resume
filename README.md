@@ -1,6 +1,6 @@
 # Resume / Portfolio
 
-Shankar Tiwari's homepage, served on GitHub Pages: https://tiwari91.github.io/resume/
+Shankar Tiwari's homepage, served on GitHub Pages: https://tiwari91.github.io/
 
 - `index.html`: short intro, projects (one lead project, two featured, the rest as rows grouped by theme), work history.
 - `cv.html`: the full resume (print or save as PDF from the page).
