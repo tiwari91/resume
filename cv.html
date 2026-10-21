@@ -63,11 +63,11 @@
             <ul>
                 <li><strong>Embedded Analytics (Full Stack):</strong> Shipped <a href="https://www.cayuse.com/award-management/insights/" target="_blank" rel="noopener noreferrer">Cayuse Insights<span class="visually-hidden"> (opens in new tab)</span></a>, the analytics product for research administrators. Built a Spring Boot service that issues signed tokens for role-based access to executive and PI dashboards with tenant isolation, and the React frontend that embeds them. Owned the Sigma embedding tech spec and the Analytics-to-Insights rebrand.</li>
                 <li><strong>Proposals S2S (100+ tickets, Full Stack):</strong> Delivered 100+ backend and frontend tickets for the <a href="https://www.cayuse.com/award-management/proposals-s2s/" target="_blank" rel="noopener noreferrer">Proposal S2S application<span class="visually-hidden"> (opens in new tab)</span></a>. Backend: REST endpoints for proposal search, import/export, routing, submission history, subaward linking, and person/affiliation management, with safe concurrent-edit handling. Frontend: budget replication/escalation, NIH validations, audit history, proposal deadline calendar, permissions with conflict handling, and continuous save with version tracking. Stood up the frontend unit test framework and fixed accessibility issues (screen readers, 400% zoom).</li>
-                <li><strong>Test Automation (Playwright, UI &amp; API):</strong> Built a Playwright suite covering proposal submission flows across 150+ grants.gov forms. Parallel sharding keeps full-suite runtime under 10 minutes. A Zephyr → Jira → Playwright pipeline scaffolds tests directly from QA-authored cases, keeping automation aligned with manual coverage. Replaced manual Postman regression with a Playwright API suite covering all 53 QA cases across reports, routing, audit history, preferences, and attachment upload. Results publish to Zephyr weekly. The first run found six backend issues, including role-gated endpoints, invalid Swagger enum values, and a multi-minute report timeout. A permission-enforcement matrix tests proposal-attachment endpoints across base, read-only, admin, and unauthenticated roles, auto-refreshes expired bearer tokens via the OAuth implicit flow, and runs on every pull request and post-deploy through Bitbucket Pipelines. Flaky-test triage and visual regression checks round out the suite.</li>
+                <li><strong>Test Automation (Playwright, UI &amp; API):</strong> Built a Playwright suite covering proposal submission flows across 150+ grants.gov forms. Parallel sharding keeps full-suite runtime under 10 minutes. A Zephyr → Jira → Playwright pipeline turns QA's written test cases into Playwright test stubs, so automated and manual coverage stay in step. Replaced manual Postman regression with a Playwright API suite covering all 53 QA cases across reports, routing, audit history, preferences, and attachment upload. Results publish to Zephyr weekly. The first run found six backend issues, including role-gated endpoints, invalid Swagger enum values, and a multi-minute report timeout. A permission-enforcement matrix tests proposal-attachment endpoints across base, read-only, admin, and unauthenticated roles, auto-refreshes expired bearer tokens via the OAuth implicit flow, and runs on every pull request and post-deploy through Bitbucket Pipelines. I also triage flaky tests and run visual regression checks.</li>
                 <li><strong>Human Ethics (IRB Compliance, Full Stack):</strong> Built features for <a href="https://www.cayuse.com/compliance-management/human-ethics/" target="_blank" rel="noopener noreferrer">Cayuse Human Ethics<span class="visually-hidden"> (opens in new tab)</span></a>, an IRB protocol management system used by research institutions. Covered protocol submissions, modifications, renewals, incident reporting, and configurable branching forms for investigators, admins, and committee members.</li>
                 <li><strong>COI Migration (100+ tickets, Full Stack):</strong> Migrated the legacy <a href="https://www.cayuse.com/compliance-management/outside-interests/" target="_blank" rel="noopener noreferrer">Conflict of Interest product<span class="visually-hidden"> (opens in new tab)</span></a> from Backbone.js to a modern React + Spring Boot + Flowable stack. Across 100+ tickets: new configurable field types, soft-delete for disclosures, print-to-PDF, autofill for SFI components, role-based dashboards, and a recovery path for stuck workflow instances. Improved UI load time by 3.6s, upgraded Node.js 16 → 18, and fixed multi-tenant bugs for NYU, CUNY, Tulane, and Kettering.</li>
                 <li><strong>Legacy Modernization (Iris):</strong> Full-stack work on the legacy <a href="https://www.cayuse.com/compliance-management/iris/" target="_blank" rel="noopener noreferrer">Iris platform<span class="visually-hidden"> (opens in new tab)</span></a>: bug fixes, new features, and environment compatibility. Built a responsive Bootstrap proof-of-concept from the legacy JSP UI for a sales demo to prospective clients.</li>
-                <li><strong>AI-Assisted Development:</strong> Regular use of Claude Code CLI for code generation, refactoring, test authoring, and debugging across Java and React.</li>
+                <li><strong>AI-Assisted Development:</strong> I use Claude Code day to day for refactoring, writing tests and debugging in Java and React.</li>
                 <li><strong>Technologies:</strong> Java 17, Spring Boot, JAX-RS, React, Redux, Playwright, Docker, AWS, SQL Server, Terraform.</li>
             </ul>
         </div>
@@ -93,7 +93,7 @@
             <h3>R&D Data Analytics Intern</h3>
             <p class="meta">DreamWorks Animation | Greater Los Angeles Area | Sep 2016 - Dec 2016</p>
             <ul>
-                <li>Worked in data pipeline and internal tools to gather and visualize metrics related to production workloads and workflows.</li>
+                <li>Worked on the data pipeline and internal tools that collect and chart production workload metrics.</li>
                 <li><strong>Technologies:</strong> Python, JavaScript, Grafana.</li>
             </ul>
         </div>
@@ -138,8 +138,8 @@
             <h3>India Car Buyer Guide (Interactive Web App)</h3>
             <p class="meta"><a href="https://tiwari91.github.io/india-car-buyer-guide/" target="_blank" rel="noopener noreferrer">Live<span class="visually-hidden"> (opens in new tab)</span></a> | <a href="https://github.com/tiwari91/india-car-buyer-guide" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in new tab)</span></a> | 2026</p>
             <ul>
-                <li><strong>What it is:</strong> Single-page, dependency-free web app that compares 20+ Indian cars on price, mileage, ground clearance, safety, boot, and 10-year cost-to-own, built to help buyers match a car to their roads and budget.</li>
-                <li><strong>Frontend:</strong> Vanilla HTML/CSS/JS. Client-side sortable and filterable comparison with a card/table view toggle, interactive bar charts, and a custom mobile-first design system, no frameworks or build step.</li>
+                <li><strong>What it is:</strong> Single-page, dependency-free web app that compares 20+ Indian cars on price, mileage, ground clearance, safety, boot, and 10-year cost-to-own, to help buyers pick a car that suits their roads and budget.</li>
+                <li><strong>Frontend:</strong> Vanilla HTML/CSS/JS. Client-side sortable and filterable comparison with a card/table view toggle, interactive bar charts, and a mobile-first layout, with no framework or build step.</li>
                 <li><strong>Recommendation engine:</strong> A 5-question quiz that scores every car against the user's budget, road type, body, gearbox, and priorities, returning a ranked shortlist with plain-language trade-offs.</li>
                 <li><strong>Deploy:</strong> Static site on GitHub Pages; source on GitHub.</li>
             </ul>
@@ -205,14 +205,14 @@
     <section class="block" id="publications" aria-labelledby="h-publications">
         <h2 class="label" id="h-publications">Publications</h2>
         <div class="body">
-        <p>California Drought Impact: Multimodal Data Representation to Predict the Water Cycle (Dec 2024)</p>
+        <p>California Drought Impact: Multimodal Data Representation to Predict the Water Cycle. With Yoon Chung Han. ISEA 2017, Manizales, Colombia (June 2017).</p>
     </div>
     </section>
 </main>
 
 <footer class="block colophon">
         <div class="label" aria-hidden="true"></div>
-        <p class="body"><span>Last updated: May 7, 2026</span> <span class="no-print"><a href="./">Portfolio</a></span></p>
+        <p class="body"><span>Last updated: 21 October 2026</span> <span class="no-print"><a href="./">Portfolio</a></span></p>
     </footer>
 </div>
 
