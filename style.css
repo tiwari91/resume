@@ -1,38 +1,38 @@
 /* Shared styles for index.html, cv.html and 404.html. */
 
 :root {
-    --bg: #f7f4ec;
-    --text: #1f1c16;
-    --muted: #5e584c;
-    --rule: #ddd6c6;
-    --link: #8a3b12;
-    --link-line: #d9a98b;
-    --shot-edge: rgba(31, 28, 22, .14);
+    --bg: #ffffff;
+    --text: #111111;
+    --muted: #555555;
+    --rule: #e5e5e5;
+    --link: #111111;
+    --link-line: #b5b5b5;
+    --shot-edge: rgba(0, 0, 0, .12);
     --measure: 38rem;
     color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-        --bg: #17150f;
-        --text: #e9e3d4;
-        --muted: #aaa392;
-        --rule: #36322a;
-        --link: #eaa77d;
-        --link-line: #7b5038;
-        --shot-edge: rgba(233, 227, 212, .14);
+        --bg: #000000;
+        --text: #f2f2f2;
+        --muted: #a3a3a3;
+        --rule: #262626;
+        --link: #ffffff;
+        --link-line: #5c5c5c;
+        --shot-edge: rgba(255, 255, 255, .14);
         color-scheme: dark;
     }
 }
 
 :root[data-theme="dark"] {
-    --bg: #17150f;
-    --text: #e9e3d4;
-    --muted: #aaa392;
-    --rule: #36322a;
-    --link: #eaa77d;
-    --link-line: #7b5038;
-    --shot-edge: rgba(233, 227, 212, .14);
+    --bg: #000000;
+    --text: #f2f2f2;
+    --muted: #a3a3a3;
+    --rule: #262626;
+    --link: #ffffff;
+    --link-line: #5c5c5c;
+    --shot-edge: rgba(255, 255, 255, .14);
     color-scheme: dark;
 }
 
