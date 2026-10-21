@@ -242,6 +242,15 @@ h3 .year, h4 .year { margin-left: .35em; }
     .no-print, .skip-link, .masthead { display: none !important; }
     .page { max-width: none; padding: 0; }
     .block { grid-template-columns: 7rem minmax(0, 1fr); padding: .8rem 0; break-inside: auto; }
-    .cv-item { break-inside: avoid; margin-bottom: .8rem; }
+    /* Long entries (the Cayuse role runs past a page) must be allowed to split, or the
+       browser pushes them to the next page and leaves a blank page behind. Keep a heading
+       with its first lines instead, and keep short list items whole. */
+    .cv-item { break-inside: auto; margin-bottom: .8rem; }
+    .cv-item h3, .cv-item .meta { break-after: avoid; }
+    .cv-item li, .cv-item p { break-inside: avoid; orphans: 3; widows: 3; }
+    /* The header runs full width on paper, not squeezed into the label column. */
+    .cv-header { display: block; }
+    .cv-header > .label { display: none; }
+    .cv-header h1 { font-size: 20pt; }
     a { text-decoration: none; }
 }
