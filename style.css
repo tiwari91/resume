@@ -12,18 +12,6 @@
     color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-        --bg: #000000;
-        --text: #f2f2f2;
-        --muted: #a3a3a3;
-        --rule: #262626;
-        --link: #ffffff;
-        --link-line: #5c5c5c;
-        --shot-edge: rgba(255, 255, 255, .14);
-        color-scheme: dark;
-    }
-}
 
 :root[data-theme="dark"] {
     --bg: #000000;
