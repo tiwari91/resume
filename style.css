@@ -32,11 +32,9 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-    font-optical-sizing: auto;
-    font-size: 18px;
+    font-family: "Instrument Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-size: 17px;
     line-height: 1.6;
-    font-variant-numeric: oldstyle-nums;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -55,7 +53,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 p { margin: 0 0 1em; }
 
-h1, h2, h3, h4 { font-weight: 600; line-height: 1.25; margin: 0; }
+h1, h2, h3, h4 { font-weight: 550; line-height: 1.25; margin: 0; }
 
 .skip-link {
     position: absolute;
@@ -138,8 +136,9 @@ h1, h2, h3, h4 { font-weight: 600; line-height: 1.25; margin: 0; }
 
 .year {
     color: var(--muted);
+    font-family: "Fragment Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     font-weight: 400;
-    font-size: .9rem;
+    font-size: .8rem;
     white-space: nowrap;
 }
 h3 .year, h4 .year { margin-left: .35em; }
